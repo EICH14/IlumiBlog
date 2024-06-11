@@ -1,0 +1,103 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ILUMI BLOG</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="blog.html"><img src="logo.gif" alt="logo"></a>
+            <h1>Ilumi Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="blog.html">Inicio</a></li>
+                    <li><a href="sobre nosotros.html">Quienes Somos</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
+                    <li><a href="audiovisual.html">Contenido Audiovisual</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <article>
+            <h2>¿QUE ES UN SISTEMA DE INFORMACION DE COMERCIO ELECTRONICO?</h2>
+            <div>
+                <img src="sistema.png" alt="Imagen de un sistema de comercio electronico" />
+            </div>
+            <p>Un sistema de información de comercio electrónico es una plataforma tecnológica que facilita la compra y venta de productos y servicios a través de internet.
+            <br>
+            Estos sistemas integran diversos componentes y funciones para gestionar todas las etapas del proceso de comercio electrónico.
+            <br>
+            Aquí hay una descripción más detallada:</p>
+            <div>
+                <ol>
+
+            <li>Gestión de Catálogo de Productos: Permite a los comerciantes listar y organizar sus productos o servicios, incluyendo descripciones, precios, imágenes y disponibilidad.</li>
+            <br>
+            <li>Carrito de Compras y Procesamiento de Pedidos: Ofrece a los usuarios la capacidad de seleccionar productos, añadirlos a un carrito virtual y proceder al pago.
+            Gestiona el proceso de pedido, desde la selección hasta la confirmación de la compra.</li>
+            <br>
+            <li>Pasarelas de Pago: Integra con sistemas de pago para procesar transacciones de manera segura, aceptando tarjetas de crédito, débito, transferencias bancarias y otros métodos de pago.</li>
+            <br>
+            <li>Gestión de Usuarios y Clientes: Maneja las cuentas de los clientes, sus perfiles, historiales de compras, y preferencias. Facilita la autenticación y la personalización de la experiencia de usuario.</li>
+            <br>
+            <li>Logística y Gestión de Inventario: Coordina el almacenamiento, seguimiento y entrega de productos. Actualiza automáticamente el inventario según las ventas y gestiona el cumplimiento de los pedidos.</li>
+            <br>
+            <li>Seguridad y Protección de Datos: Implementa medidas de seguridad para proteger la información sensible de los usuarios y las transacciones, como el cifrado de datos y la autenticación de dos factores.</li>
+            <br>
+            <li>Analítica y Reportes: Proporciona herramientas de análisis para monitorear el rendimiento de ventas, el comportamiento de los usuarios, y otras métricas clave. Ayuda a los comerciantes a tomar decisiones informadas basadas en datos.</li>
+            <br>
+            <li>Marketing y Promociones: Soporta la creación y gestión de campañas de marketing, promociones, descuentos y programas de lealtad para atraer y retener a los clientes.</li>
+            <br>
+            <li>Integración con Otros Sistemas: Conecta con sistemas externos como ERP (Enterprise Resource Planning), CRM (Customer Relationship Management) y plataformas de redes sociales para una operación más fluida y eficiente.</li>
+            </ol>
+            </div>
+            <br>
+            <p>En si un sistema de información de comercio electrónico es una solución integral que permite a las empresas llevar a cabo sus actividades comerciales en línea de manera eficiente, segura y efectiva, mejorando la experiencia del cliente y optimizando las operaciones internas.</p>
+            </article>
+            <br>
+            <br>
+
+            <article>
+                <h2>Aqui hay mas temas sobre los sitemas de informacion de comercio electrónico</h2>
+                <div class="slider-container">
+                    <div class="slider" id="slider">
+                        <div class="slide"><a href="casos de uso.html"><img src="casos de uso.jpg"  alt="Casos de uso"></a></div>
+                        <div class="slide"><a href="interfaz e y s.html"><img src="interfaz e y s.png" alt="Interfaz e/s"></a></div>
+                        <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
+                    </div>
+                    <div class="slider-buttons">
+                        <button class="slider-button" onclick="moveSlide(-1)">&#9664;</button>
+                        <button class="slider-button" onclick="moveSlide(1)">&#9654;</button>
+                    </div>
+                </div>
+            </article>
+
+            <br>
+            <br>
+        </main>
+        <br>
+        <br>
+        <footer>
+            <p>&copy; Ilumi Blog 2024</p>
+        </footer>
+        <script src="script.js"></script>
+       
+       <script>
+            let currentSlide = 0;
+    
+            function moveSlide(direction) {
+                const slider = document.getElementById('slider');
+                const slides = document.querySelectorAll('.slide');
+                const totalSlides = slides.length;
+    
+                currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+                const offset = -currentSlide * 100;
+                slider.style.transform = `translateX(${offset}%)`;
+            }
+        </script>
+        
+    </body>
+    </html>
